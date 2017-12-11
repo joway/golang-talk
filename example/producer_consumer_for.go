@@ -39,7 +39,5 @@ func main() {
 		go consumer(i)
 	}
 
-	for {
-		<-done
-	}
+	<-done
 }
